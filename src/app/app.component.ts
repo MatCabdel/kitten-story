@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CatRegister } from './models/catRegister.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'kitten-story';
-}
+  catList: CatRegister[]= []
+
+  onReceiveNewCat(event: CatRegister): void {
+
+    this.catList.push(event);
+    console.log(this.catList)
+  }
+  }
+

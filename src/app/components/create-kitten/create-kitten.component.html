@@ -1,0 +1,61 @@
+<div class="form-container">
+<div class="form">
+<h1>formulaire inscription pour chat</h1>
+
+<form #myForm="ngForm" (ngSubmit)="myForm.valid && createCat()">
+  <div class="input-form">
+  <fieldset>
+    <label for="name-order">Nom du Chat: </label>
+    <input
+      id="name-order"
+      name="name-order"
+      [(ngModel)]="newCat.name"
+      #lastname="ngModel"
+      type="text"
+      required
+    />
+  </fieldset>
+  <fieldset>
+    <label for="race-order">Race du Chat: </label>
+    <input
+      id="race-order"
+      name="race-order"
+      [(ngModel)]="newCat.race"
+      #lastname="ngModel"
+      type="text"
+    />
+  </fieldset>
+  <fieldset>
+    <label for="birthday-order">Date de naissence du Chat: </label>
+    <input
+      id="birthday-order"
+      name="birthday-order"
+      [(ngModel)]="newCat.birthday"
+      #lastname="ngModel"
+      type="text"
+      required
+    />
+  </fieldset>
+  <fieldset>
+    <label for="picture-order">Photo du Chat: </label>
+    <input
+    id="picture-order"
+    name="picture-order"
+    [(ngModel)]="newCat.picture"
+    #lastname="ngModel"
+    type="text"
+    required
+    />
+  </fieldset>
+  <div>
+    Form submitted ? {{ myForm.submitted }} Form valid ? {{ myForm.valid }} Form
+    invalid ? {{ myForm.invalid }}
+  </div>
+</div>
+<div class="btn-form">
+  <button type="reset">Restaurer</button>
+  <button type="submit">Enregistrer mon chat</button>
+</div>
+</form>
+</div>
+</div>

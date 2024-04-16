@@ -1,0 +1,47 @@
+.form-container {
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgb(118, 19, 19);
+  color: white;
+
+  .form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .input-form {
+    padding: 20px;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      padding: 5px;
+    }
+
+    input {
+      padding: 5px;
+    }
+  }
+  .btn-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    button {
+      background-color: white;
+      color: rgb(118, 19, 19);
+      border: none;
+      border-radius: 10px;
+      padding: 5px 15px;
+    }
+  }
+}
