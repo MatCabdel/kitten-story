@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CatRegister } from '../../models/catRegister.model';
 
 @Component({
   selector: 'app-list-kitten',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class ListKittenComponent {
 
+  @Input()
+  kittenData!: CatRegister;
 }

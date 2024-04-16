@@ -1,0 +1,53 @@
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.refuge-container {
+margin: 0 auto;
+padding: 10px 20px;
+width: 100%;
+
+
+.card-list{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  margin: 5px 10px;
+
+.cat-card {
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.322);
+
+  .img-card {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .info-card {
+    padding: 10px 10px;
+  }
+
+  .btn-card {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(86, 32, 32);
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+}
+}

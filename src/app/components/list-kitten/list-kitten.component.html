@@ -1,1 +1,18 @@
-<p>list-kitten works!</p>
+<h1>Refuge</h1>
+<div class="refuge-container">
+  <div class="card-list">
+    <div class="cat-card">
+      <div class="img-card">
+        <img src="{{ kittenData.picture }}" alt="picture of cat" />
+      </div>
+      <div class="info-card">
+        <p>Nom: {{ kittenData.name }}</p>
+        <p>Race: {{ kittenData.race }}</p>
+        <p>Né le: {{ kittenData.birthday }}</p>
+      </div>
+      <div class="btn-card">
+        <button>Adopter</button>
+      </div>
+    </div>
+  </div>
+</div>

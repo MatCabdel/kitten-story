@@ -1,6 +1,11 @@
 <div class="app-container">
-<h1>Collection</h1>
-
+<div class="kitten-container">
+  <div class="list-kitten-container">
+<app-list-kitten *ngFor="let cat of catList" [kittenData]="cat"></app-list-kitten></div>
+<div class="user-kitten-container">
+<app-user-kitten></app-user-kitten>
+</div>
+</div>
 <app-create-kitten (sendCat)="onReceiveNewCat($event)"></app-create-kitten>
 
 </div>
