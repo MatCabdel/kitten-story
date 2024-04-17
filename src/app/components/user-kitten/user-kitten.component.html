@@ -1,1 +1,17 @@
-<h1>Mon panier de chat</h1>
+
+  <div class="user-kitten-container">
+    <div class="cat-card">
+      <div class="img-card">
+        <img src="{{ adoptedCatData.picture }}" alt="picture of cat" />
+      </div>
+      <div class="info-card">
+        <p>Nom: {{ adoptedCatData.name }}</p>
+        <p>Race: {{ adoptedCatData.race }}</p>
+        <p>Né le: {{ adoptedCatData.birthday }}</p>
+      </div>
+      <div class="btn-card">
+        <button>Je vais me faire manger</button>
+      </div>
+    </div>
+  </div>
+

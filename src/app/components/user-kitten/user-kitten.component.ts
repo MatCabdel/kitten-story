@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CatRegister } from '../../models/catRegister.model';
 
 @Component({
   selector: 'app-user-kitten',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class UserKittenComponent {
 
-}
+  @Input()
+  adoptedCatData!: CatRegister;
+
+  }

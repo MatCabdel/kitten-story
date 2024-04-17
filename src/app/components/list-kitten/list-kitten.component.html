@@ -1,6 +1,5 @@
-<h1>Refuge</h1>
+
 <div class="refuge-container">
-  <div class="card-list">
     <div class="cat-card">
       <div class="img-card">
         <img src="{{ kittenData.picture }}" alt="picture of cat" />
@@ -11,8 +10,7 @@
         <p>Né le: {{ kittenData.birthday }}</p>
       </div>
       <div class="btn-card">
-        <button>Adopter</button>
+        <button (click)="onAdopt()">Adopter</button>
       </div>
     </div>
-  </div>
 </div>
